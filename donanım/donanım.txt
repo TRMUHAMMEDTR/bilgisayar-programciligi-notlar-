@@ -13,9 +13,10 @@ HDD (Hard Disk Drive): Verileri dönen diskler üzerinde saklar. Okuma-yazma kaf
 SSD (Solid State Drive): Verileri flaş bellek hücrelerinde saklar, hareketli parçası yoktur. HDD’den daha hızlıdır. Türleri: SATA, M.2, mSATA ve NVMe SSD.
 
 1. Bilgisayarın iç donanımları
+- CPU (İşlemci): Bilgisayarın beynidir. Tüm işlemleri ve hesaplamaları yapar, komutları işler ve diğer donanımları kontrol eder.
 - Anakart: Tüm donanım parçalarını birbirine bağlar.
 - PSU (Güç kaynağı): Bilgisayara gerekli elektriği sağlar.
-- RAM: Verileri geçici olarak depolar, işlemciye hızlı erişim sağlar.
+- RAM: Verileri geçici olarak depolar, işlemciye hızlı erişim sağlar. Türleri: DDR3 (eski), DDR4 (yaygın), DDR5 (yeni nesil).
 - ROM: Kalıcı verileri saklayan bellek türüdür.
 - GPU (Ekran kartı): Grafik işlemlerini yapar ve görüntüyü ekrana aktarır.
 - NIC (Ağ kartı): Bilgisayarın ağa bağlanmasını sağlar.
@@ -65,3 +66,18 @@ USB Bilgisi
 - USB 2.0, USB 3.0, USB 3.2 ve USB-C gibi türleri bulunur.
 - Bant genişliği: Bir bağlantının aynı anda taşıyabileceği veri miktarıdır.
 - Veri aktarım hızı arttıkça cihazlar daha verimli çalışabilir.
+
+Anakart Form Faktörleri
+- ATX: Standart boyutlu anakart (305x244 mm). Çok genişleme yuvası ve özellik sunar.
+- Micro-ATX: ATX'ten daha küçük (244x244 mm). Orta seviye sistemler için uygundur.
+- Mini-ITX: En küçük form faktör (170x170 mm). Kompakt kasalar ve küçük sistemler için idealdir.
+
+BIOS ve UEFI Farkları
+- BIOS: Eski nesil başlatma sistemi. Sınırlı kullanıcı arayüzü, yavaş başlatma, 2 TB'a kadar disk desteği.
+- UEFI: Modern başlatma sistemi. Fare desteği, hızlı başlatma, 2 TB'dan büyük diskleri destekler, güvenli önyükleme (Secure Boot) özelliği vardır.
+
+SSD ve HDD Detayları
+- HDD: Mekanik, yavaş, ucuz, büyük kapasitelerde uygun maliyetli.
+- SSD (SATA): Elektriksel, HDD'den hızlı ama NVMe'den yavaş.
+- SSD (NVMe M.2): En hızlı depolama teknolojisi, doğrudan PCIe üzerinden bağlanır. Günümüzde en yaygın kullanılan SSD türüdür.
+- Not: mSATA eski teknoloji olup yerini M.2'ye bırakmıştır.

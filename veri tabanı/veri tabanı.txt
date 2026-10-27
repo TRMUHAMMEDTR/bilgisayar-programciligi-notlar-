@@ -1,19 +1,25 @@
 10–23 Eylül 2026 arasındaki kayıtlar: Between #10.09.2026# And #23.09.2026#
+Not: # işareti Access'e özgü tarih formatıdır.
 100 değerinden küçükleri listele	Ölçüt: <100
 alan adı: veli meslek ölçüt:"öğretmen"
 
-İstenen işlem	Ölçüt / işlem
-100'den küçük	<100
-100'den küçük veya eşit	<=100
-100'den büyük	>100
-100'e eşit	=100
-Öğretmen olanlar	"öğretmen"
-23.09.2026'dan önce	<#23.09.2026#
-10–23 Eylül arası	Between #10.09.2026# And #23.09.2026#
-Boş alanlar	Is Null
-Boş olmayan alanlar	Is Not Null
-Belirli metinle başlayanlar	Like "A*"
-Belirli metni içerenler	Like "*Ali*"
++-------------------------------+------------------------------------------+
+| İstenen işlem                 | Ölçüt / işlem                            |
++-------------------------------+------------------------------------------+
+| 100'den küçük                 | <100                                     |
+| 100'den küçük veya eşit       | <=100                                    |
+| 100'den büyük                 | >100                                     |
+| 100'e eşit                    | =100                                     |
+| Öğretmen olanlar              | "öğretmen"                               |
+| 23.09.2026'dan önce           | <#23.09.2026#                            |
+| 10–23 Eylül arası             | Between #10.09.2026# And #23.09.2026#   |
+| Boş alanlar                   | Is Null                                  |
+| Boş olmayan alanlar           | Is Not Null                              |
+| Belirli metinle başlayanlar   | Like "A*"                                |
+| Belirli metni içerenler       | Like "*Ali*"                             |
++-------------------------------+------------------------------------------+
+
+Not: Access'te tarih değerleri # işareti içinde yazılır. Örnek: #23.09.2026#
 
 
 Access menüleri 
@@ -49,16 +55,19 @@ Dış Veri sekmesi
 
 Tablo tasarımı
 
-Alan adı	Veri türü	Boyut / açıklama
-AracID 🔑	Otomatik Sayı	Birincil anahtar
-Plaka	Kısa Metin	15 karakter
-Marka	Kısa Metin	30 karakter
-ModelYili	Sayı	Tamsayı
-GunlukUcret	Para Birimi	TL
-KiralamaTarihi	Tarih ve Saat	Tarih
-IadeTarihi	Tarih ve Saat	Tarih
-AracMusaitMi	Evet/Hayır	Doğru/Yanlış
-Aciklama	Uzun Metin	Uzun açıklama
++----------------+------------------+----------------------+
+| Alan adı       | Veri türü        | Boyut / açıklama     |
++----------------+------------------+----------------------+
+| AracID 🔑      | Otomatik Sayı    | Birincil anahtar     |
+| Plaka          | Kısa Metin       | 15 karakter          |
+| Marka          | Kısa Metin       | 30 karakter          |
+| ModelYili      | Sayı             | Tamsayı              |
+| GunlukUcret    | Para Birimi      | TL                   |
+| KiralamaTarihi | Tarih ve Saat    | Tarih                |
+| IadeTarihi     | Tarih ve Saat    | Tarih                |
+| AracMusaitMi   | Evet/Hayır       | Doğru/Yanlış         |
+| Aciklama       | Uzun Metin       | Uzun açıklama        |
++----------------+------------------+----------------------+
 
 Plaka ve telefon gibi başında sıfır bulunabilen bilgiler genellikle Kısa Metin olur. Fiyat Para Birimi, tarih Tarih ve Saat olur.
 
@@ -66,19 +75,23 @@ Plaka ve telefon gibi başında sıfır bulunabilen bilgiler genellikle Kısa Me
 ekstra bilgi 
 
 Access veri türleri
-Veri türü	Ne için kullanılır?
-Sayı	Matematiksel işlemlerde kullanılacak sayılar
-Para Birimi	Fiyat, ücret, TL ve döviz
-Kısa Metin	İsim, plaka, telefon, en fazla 255 karakter
-Uzun Metin	Uzun açıklamalar ve notlar
-Tarih ve Saat	Tarih ve saat bilgileri
-Evet/Hayır	İki durumlu bilgiler
-Ek	Kayda dosya, resim veya belge ekleme
-Köprü	Web adresi veya bağlantı
-OLE Nesnesi	Word, Excel, resim gibi nesneleri gömme
-Zengin Metin	Biçimlendirilmiş metin; renk ve yazı tipi gibi özellikler
-Otomatik Sayı	Otomatik oluşturulan benzersiz numaralar
-Hesaplanmış	Bir ifade kullanarak değer hesaplayan alan
+
++----------------+-------------------------------------------------------------+
+| Veri türü      | Ne için kullanılır?                                         |
++----------------+-------------------------------------------------------------+
+| Sayı           | Matematiksel işlemlerde kullanılacak sayılar                |
+| Para Birimi    | Fiyat, ücret, TL ve döviz                                   |
+| Kısa Metin     | İsim, plaka, telefon, en fazla 255 karakter                 |
+| Uzun Metin     | Uzun açıklamalar ve notlar                                  |
+| Tarih ve Saat  | Tarih ve saat bilgileri                                     |
+| Evet/Hayır     | İki durumlu bilgiler                                        |
+| Ek             | Kayda dosya, resim veya belge ekleme                        |
+| Köprü          | Web adresi veya bağlantı                                    |
+| OLE Nesnesi    | Word, Excel, resim gibi nesneleri gömme                     |
+| Zengin Metin   | Biçimlendirilmiş metin; renk ve yazı tipi gibi özellikler   |
+| Otomatik Sayı  | Otomatik oluşturulan benzersiz numaralar                    |
+| Hesaplanmış    | Bir ifade kullanarak değer hesaplayan alan                  |
++----------------+-------------------------------------------------------------+
 
 Dikkat: Sayı veri türü tamsayı veya ondalıklı sayı olarak ayarlanabilir. Boyut alanında ise genellikle karakter sayısı veya sayı alanının boyutu belirlenir; her veri türünde aynı şekilde kullanılmaz.
 

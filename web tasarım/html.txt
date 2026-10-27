@@ -11,23 +11,38 @@ Sayfanın başlık bilgisini belirler. title tarayıcı sekmesinde görünür.
 
 Sayfada görünen tablo, yazı ve resim gibi içerikleri barındırır.
 
+4 <h1>, <h2>, <h3> (Başlık Etiketleri)
 
-4 <table>
+Başlıklar oluşturur. h1 en büyük, h6 en küçük başlıktır.
+
+5 <p> (Paragraf)
+
+Metin paragrafı oluşturur.
+
+6 <a href=""> (Bağlantı/Link)
+
+Başka bir sayfaya veya web sitesine bağlantı oluşturur. Örnek: <a href="https://google.com">Google'a Git</a>
+
+7 <ul>, <ol>, <li> (Listeler)
+
+ul: sırasız liste (madde işaretli), ol: sıralı liste (numaralı), li: liste öğesi
+
+8 <table>
 
 Tabloyu başlatır. border="2" kenarlık kalınlığını, font-size:24px yazı boyutunu ayarlar.
 
 
-5 <tr>
+9 <tr>
 
 Tabloda yeni bir satır oluşturur (table row).
 
 
-6  <th> ve <td>
+10  <th> ve <td>
 
 th başlık hücresi oluşturur ve yazıyı genellikle kalın gösterir. td normal veri hücresi oluşturur.
 
 
-7  </table>, </body>, </html>
+11  </table>, </body>, </html>
 
 Tabloyu, sayfa içeriğini ve HTML belgesini sırasıyla bitirir.
 
@@ -38,10 +53,13 @@ rowspan	Hücreyi dikeyde birleştirir.	rowspan="3"
 background-color	Arka plan rengini değiştirir.	background-color:green;
 color	Yazı rengini değiştirir.	color:red;
 font-size	Yazı boyutunu değiştirir.	font-size:24px;
+font-weight	Yazı kalınlığını ayarlar.	font-weight:bold;
+text-align	Metni hizalar (sağ, sol, orta).	text-align:center;
 border	Kenarlık ekler.	border="2"
 width	Genişlik belirler.	width="100"
 height	Yükseklik belirler.	height="100"
 img src	Resim ekler.	<img src="aiopc.png">
+a href	Bağlantı/link oluşturur.	<a href="sayfa.html">Tıkla</a>
 
 
 1. / işareti ne işe yarar?
@@ -95,6 +113,13 @@ Kod	Görevi
 <hr>	Yatay çizgi ekler.
 <input>	Form giriş alanı oluşturur.
 
+Temel Metin Biçimlendirme Etiketleri
+Kod	Görevi	Örnek
+<b> veya <strong>	Metni kalın yapar.	<b>Kalın yazı</b>
+<i> veya <em>	Metni italik yapar.	<i>Eğik yazı</i>
+<u>	Metni altı çizili yapar.	<u>Altı çizili</u>
+<br>	Alt satıra geçer.	Satır1<br>Satır2
+
 1. RGB ile renk verme
 <th style="background-color:rgb(144,238,144);">Ürün Adı</th>
 
@@ -108,8 +133,19 @@ Kod	Görevi
 örnek renk kodları sınavda kullanıla bilecek
 rgb(255,0,0) kırmızı
 rgb(0,255,0) yeşil
+rgb(0,0,255) mavi
 rgb(255,255,0) sarı
 rgb(0,0,0) siyah
+rgb(255,255,255) beyaz
+
+RGB Renk Sistemi Açıklaması:
+- RGB = Red (Kırmızı) + Green (Yeşil) + Blue (Mavi)
+- Her değer 0 ile 255 arasındadır.
+- rgb(255,0,0) = Tam kırmızı, yeşil ve mavi yok
+- rgb(0,255,0) = Tam yeşil, kırmızı ve mavi yok
+- rgb(255,255,0) = Kırmızı + Yeşil = Sarı
+- rgb(0,0,0) = Hiç renk yok = Siyah
+- rgb(255,255,255) = Tüm renkler tam = Beyaz
 
 
 Sınavda karıştırmaman gereken püf noktaları
