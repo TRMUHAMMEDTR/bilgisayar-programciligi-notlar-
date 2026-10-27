@@ -1,0 +1,125 @@
+
+1 <html>
+
+HTML belgesini başlatır. En dıştaki etikettir.
+
+2 <head> ve <title>
+
+Sayfanın başlık bilgisini belirler. title tarayıcı sekmesinde görünür.
+
+3 <body>
+
+Sayfada görünen tablo, yazı ve resim gibi içerikleri barındırır.
+
+
+4 <table>
+
+Tabloyu başlatır. border="2" kenarlık kalınlığını, font-size:24px yazı boyutunu ayarlar.
+
+
+5 <tr>
+
+Tabloda yeni bir satır oluşturur (table row).
+
+
+6  <th> ve <td>
+
+th başlık hücresi oluşturur ve yazıyı genellikle kalın gösterir. td normal veri hücresi oluşturur.
+
+
+7  </table>, </body>, </html>
+
+Tabloyu, sayfa içeriğini ve HTML belgesini sırasıyla bitirir.
+
+
+Kod	Görevi	Örnek
+colspan	Hücreyi yatayda birleştirir.	colspan="3"
+rowspan	Hücreyi dikeyde birleştirir.	rowspan="3"
+background-color	Arka plan rengini değiştirir.	background-color:green;
+color	Yazı rengini değiştirir.	color:red;
+font-size	Yazı boyutunu değiştirir.	font-size:24px;
+border	Kenarlık ekler.	border="2"
+width	Genişlik belirler.	width="100"
+height	Yükseklik belirler.	height="100"
+img src	Resim ekler.	<img src="aiopc.png">
+
+
+1. / işareti ne işe yarar?
+Kural: / varsa genellikle etiketi kapatır, yoksa etiketi açar.
+Kod	Görevi
+<tr>	Yeni satır açar / başlatır.
+</tr>	Satırı kapatır / bitirir.
+<td>	Normal hücreyi açar.
+</td>	Normal hücreyi kapatır.
+<th>	Başlık hücresini açar.
+</th>	Başlık hücresini kapatır.
+<table>	Tabloyu açar.
+</table>	Tabloyu kapatır.
+<body>	Sayfanın görünen içeriğini açar.
+</body>	Görünen içerik bölümünü kapatır.
+
+örnek
+
+<tr>
+    <td>Fiyat</td>
+</tr>
+
+Bu kodun anlamı:
+1. <tr> → Yeni bir tablo satırı başlat.
+2. <td> → Bu satırın içine bir hücre aç.
+3. Fiyat → Hücrenin içine bu yazıyı koy.
+4. </td> → Hücreyi kapat.
+5. </tr> → Satırı kapat.
+
+
+HTML kodlarının açılma ve kapanma sırası
+Şu örneğe dikkat et:
+
+<table border="1">
+    <tr>
+        <th>Ürün Adı</th>
+        <td>Bilgisayar</td>
+    </tr>
+    <tr>
+        <th>Fiyat</th>
+        <td>35000 TL</td>
+    </tr>
+</table>
+
+
+/ gerektirmeyen etiketler de var!
+Her etiketi kapatmak zorunda değilsin. Bazı HTML etiketleri tek başına kullanılır.
+Kod	Görevi
+<img src="aiopc.png">	Resim ekler.
+<br>	Alt satıra geçer.
+<hr>	Yatay çizgi ekler.
+<input>	Form giriş alanı oluşturur.
+
+1. RGB ile renk verme
+<th style="background-color:rgb(144,238,144);">Ürün Adı</th>
+
+
+- background-color: Hücrenin arka plan rengini belirler.
+- rgb(144,238,144): Açık yeşil rengin RGB değeridir.
+- İlk sayı: Kırmızı (Red)
+- İkinci sayı: Yeşil (Green)
+- Üçüncü sayı: Mavi (Blue)
+
+örnek renk kodları sınavda kullanıla bilecek
+rgb(255,0,0) kırmızı
+rgb(0,255,0) yeşil
+rgb(255,255,0) sarı
+rgb(0,0,0) siyah
+
+
+Sınavda karıştırmaman gereken püf noktaları
+- <tr> = yeni satır başlatır.
+- </tr> = mevcut satırı bitirir.
+- <td> = normal hücre.
+- <th> = başlık hücresi; genellikle kalın ve ortalı görünür.
+- colspan="2" = bir hücreyi yatayda iki sütunluk yapar.
+- rowspan="3" = bir hücreyi dikeyde üç satır boyunca uzatır.
+- > işareti etiketin bittiğini belirtir; / ise kapanış etiketlerinde kullanılır.
+- Etiket adları genellikle küçük harfle yazılır.
+- style="background-color:green;" ile arka plan rengini değiştirirsin.
+- Metin, açma ve kapatma etiketlerinin arasına yazılır: <td>35000 TL</td>.

@@ -1,0 +1,67 @@
+1. Temiz Biçimlendirilmiş Flash Bellek
+2. Rufus ön yükleme programı
+3. Windows 11 Yükleme Dosyası
+4. BIOS-UEFI → Boot Menüsü
+5. İşletim Sistemi Yükleme bölümü
+6. Diğer Ayarlar
+7. İnternet Açılacak
+8. Windows Update
+9. Bilgisayar üretici firmanın sitesinden driver yüklemek
+
+
+HDD (Hard Disk Drive): Verileri dönen diskler üzerinde saklar. Okuma-yazma kafası bulunur. Elektrik kesilse bile veriler silinmez.
+SSD (Solid State Drive): Verileri flaş bellek hücrelerinde saklar, hareketli parçası yoktur. HDD’den daha hızlıdır. Türleri: SATA, M.2, mSATA ve NVMe SSD.
+
+1. Bilgisayarın iç donanımları
+- Anakart: Tüm donanım parçalarını birbirine bağlar.
+- PSU (Güç kaynağı): Bilgisayara gerekli elektriği sağlar.
+- RAM: Verileri geçici olarak depolar, işlemciye hızlı erişim sağlar.
+- ROM: Kalıcı verileri saklayan bellek türüdür.
+- GPU (Ekran kartı): Grafik işlemlerini yapar ve görüntüyü ekrana aktarır.
+- NIC (Ağ kartı): Bilgisayarın ağa bağlanmasını sağlar.
+- Ses kartı: Ses işlemlerini gerçekleştirir.
+- SSD/HDD: Verileri kalıcı olarak depolar.
+- RAID: Birden fazla depolama birimini birlikte kullanmaya yönelik teknolojidir.
+
+Bilgisayar montajı – işlem sırası
+1. Kasayı güvenli bir zemine yerleştir, elektrik bağlantısını kes.
+2. Anakartı kasaya sabitle.
+3. İşlemciyi doğru yönde ve zorlamadan tak.
+4. Termal macun sür, işlemci soğutucusunu ve fan kablosunu bağla.
+5. RAM belleği yuvasına yerleştir.
+6. Güç kaynağını sabitle.
+7. SSD/HDD'yi uygun bölmeye yerleştir.
+8. SATA veri ve güç kablolarını bağla.
+9. Varsa optik sürücüyü tak.
+10. Ekran kartı ve ses kartı gibi ek kartları PCIe yuvasına tak.
+11. Power SW, Reset SW, HDD LED ve Power LED bağlantılarını yap.
+
+Statik elektrik güvenliği
+- Topraklama: Elektrik yükünün güvenli şekilde toprağa aktarılmasıdır.
+- Antistatik bileklik: Statik elektriğin donanımlara zarar vermesini önlemeye yardımcı olur.
+
+
+Giriş-Çıkış (I/O) Portları
+I/O portları: Giriş aygıtlarından bilgisayara veri aktarır, işlemcide işlenen verilerin çıkış aygıtlarına iletilmesini sağlar. Portların türü ve sayısı anakartın marka, model ve form faktörüne göre değişir.
+
+Port  Türleri ve Görevleri
+Port	Görevi
+PS/2	Eski tip klavye ve fare bağlantısı.
+USB	Klavye, fare, yazıcı, bellek gibi cihazları bağlar; veri ve güç aktarır.
+VGA	Analog görüntü aktarır.
+DVI	Analog ve dijital görüntü aktarabilir.
+HDMI	Dijital ses ve görüntüyü birlikte aktarır.
+LAN (RJ-45)	Kablolu yerel ağ ve internet bağlantısı sağlar.
+DisplayPort	Yüksek çözünürlüklü görüntü aktarır; bilgisayar ve profesyonel monitörlerde yaygındır.
+Audio Jack	Kulaklık, hoparlör ve mikrofon bağlantısı sağlar.
+Thunderbolt	Yüksek hızlı veri, görüntü ve güç aktarımı yapar; genellikle USB-C yapısını kullanır.
+Wi-Fi anten bağlantısı	Kablosuz ağ sinyalinin alınmasını ve kapsama alanının artırılmasını sağlar.
+Optik Ses	Dijital sesi optik kabloyla aktarır; parazit ve sinyal kaybını azaltır.
+
+HDMI ve DisplayPort Farkı
+- HDMI: Televizyon ve diğer tüketici elektroniği cihazlarında yaygındır.
+- DisplayPort: Bilgisayar ve profesyonel monitörlerde daha yaygındır.
+USB Bilgisi
+- USB 2.0, USB 3.0, USB 3.2 ve USB-C gibi türleri bulunur.
+- Bant genişliği: Bir bağlantının aynı anda taşıyabileceği veri miktarıdır.
+- Veri aktarım hızı arttıkça cihazlar daha verimli çalışabilir.
