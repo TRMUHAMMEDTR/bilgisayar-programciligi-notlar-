@@ -1,0 +1,185 @@
+VERİ ALMA VE TÜR DÖNÜŞÜMÜ
+
+input()
+Kullanıcıdan metin (string) olarak veri alır.
+Örnek: isim = input("Adınız: ")
+
+int()
+Metni tam sayıya (integer) dönüştürür.
+Örnek: yas = int(input("Yaşınız: "))
+
+float()
+Metni ondalıklı sayıya dönüştürür.
+Örnek: boy = float(input("Boyunuz (m): "))
+
+
+MATEMATİKSEL OPERATÖRLER
+
++----------------+---------------------------+------------------+
+| Operatör       | Görevi                    | Örnek            |
++----------------+---------------------------+------------------+
+| +              | Toplama                   | 5 + 3 = 8        |
+| -              | Çıkarma                   | 5 - 3 = 2        |
+| *              | Çarpma                    | 5 * 3 = 15       |
+| /              | Bölme (ondalıklı sonuç)   | 5 / 2 = 2.5      |
+| //             | Tam bölme (tamsayı sonuç) | 5 // 2 = 2       |
+| %              | Mod (kalan bulma)         | 5 % 2 = 1        |
+| **             | Üs alma                   | 5 ** 2 = 25      |
++----------------+---------------------------+------------------+
+
+
+KOŞUL YAPILARI
+
+Tekli Koşul (if)
+Sadece bir koşul kontrol edilir.
+
+if yas >= 18:
+    print("Reşitsiniz")
+
+
+İkili Koşul (if-else)
+Koşul doğruysa if, yanlışsa else çalışır.
+
+if yas >= 18:
+    print("Reşitsiniz")
+else:
+    print("Reşit değilsiniz")
+
+
+Çoklu Koşul (if-elif-else)
+Birden fazla koşul sırayla kontrol edilir.
+
+if not >= 90:
+    print("AA")
+elif not >= 80:
+    print("BA")
+elif not >= 70:
+    print("BB")
+else:
+    print("Kaldı")
+
+
+MANTIKSAL OPERATÖRLER
+
++----------------+------------------------------------------------------+
+| Operatör       | Görevi                                               |
++----------------+------------------------------------------------------+
+| and            | Her iki koşul da doğru olmalı                        |
+| or             | Koşullardan en az biri doğru olmalı                  |
+| not            | Koşulun tersini alır                                 |
++----------------+------------------------------------------------------+
+
+Örnekler:
+if yas >= 18 and ehliyet == "var":
+    print("Araba kullanabilirsiniz")
+
+if gun == "cumartesi" or gun == "pazar":
+    print("Hafta sonu")
+
+if not (yas < 18):
+    print("Reşitsiniz")
+
+
+STRING DİLİMLEME (SLICING)
+
+Metin = "Python"
+
++----------------+---------------------------+------------------+
+| Kod            | Sonuç                     | Açıklama         |
++----------------+---------------------------+------------------+
+| Metin[0]       | P                         | İlk karakter     |
+| Metin[2]       | t                         | 3. karakter      |
+| Metin[-1]      | n                         | Son karakter     |
+| Metin[0:3]     | Pyt                       | 0'dan 3'e kadar  |
+| Metin[:3]      | Pyt                       | Baştan 3'e kadar |
+| Metin[3:]      | hon                       | 3'ten sona kadar |
+| Metin[1:4]     | yth                       | 1'den 4'e kadar  |
++----------------+---------------------------+------------------+
+
+Not: İndeks 0'dan başlar. Son indeks dahil değildir.
+
+
+STRING METODLARI
+
+lower()
+Metni küçük harfe çevirir.
+Örnek: "PYTHON".lower() → "python"
+
+upper()
+Metni büyük harfe çevirir.
+Örnek: "python".upper() → "PYTHON"
+
+replace(eski, yeni)
+Metindeki bir kelimeyi başka kelimeyle değiştirir.
+Örnek: "Merhaba Dünya".replace("Dünya", "Python") → "Merhaba Python"
+
+split(ayraç)
+Metni belirtilen ayraçtan böler ve liste yapar.
+Örnek: "elma,armut,muz".split(",") → ["elma", "armut", "muz"]
+Örnek: "Python Programlama".split() → ["Python", "Programlama"]
+
+
+MATCH-CASE (Python 3.10+)
+
+Birden fazla durumu kontrol etmek için kullanılır. (switch-case benzeri)
+
+gun = input("Gün adı: ")
+
+match gun:
+    case "pazartesi":
+        print("Haftanın ilk günü")
+    case "cuma":
+        print("Haftanın son iş günü")
+    case "cumartesi" | "pazar":
+        print("Hafta sonu")
+    case _:
+        print("Geçersiz gün")
+
+Not: case _ → Hiçbir koşul uymadığında çalışır (default).
+
+
+KULLANIM ÖRNEKLERİ
+
+Örnek 1: Veri alma ve işlem
+sayi1 = int(input("1. sayı: "))
+sayi2 = int(input("2. sayı: "))
+toplam = sayi1 + sayi2
+print("Toplam:", toplam)
+
+
+Örnek 2: Koşul ve mantıksal operatör
+not = int(input("Notunuz: "))
+
+if not >= 50 and not < 60:
+    print("Geçtiniz ama düşük not")
+elif not >= 60:
+    print("Başarılı")
+else:
+    print("Kaldınız")
+
+
+Örnek 3: String işlemleri
+metin = "Python Programlama Dili"
+print(metin.lower())           # python programlama dili
+print(metin.upper())           # PYTHON PROGRAMLAMA DİLİ
+print(metin.replace("Dili", "Kursu"))  # Python Programlama Kursu
+print(metin.split())           # ['Python', 'Programlama', 'Dili']
+print(metin[0:6])              # Python
+
+
+Örnek 4: Match-case kullanımı
+islem = input("İşlem (+, -, *, /): ")
+a = float(input("1. sayı: "))
+b = float(input("2. sayı: "))
+
+match islem:
+    case "+":
+        print(a + b)
+    case "-":
+        print(a - b)
+    case "*":
+        print(a * b)
+    case "/":
+        print(a / b)
+    case _:
+        print("Geçersiz işlem")
